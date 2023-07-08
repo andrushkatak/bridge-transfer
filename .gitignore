@@ -25,6 +25,22 @@
 *.la
 *.a
 *.lib
+void map_filler_iterator(std::map<std::string,float>&m)
+{
+    std::istream_iterator<std::string>input_iterator(std::cin);
+    std::string str;
+    while (*++input_iterator!="end")
+    {
+        str=*input_iterator;
+        if (str_letr_chk(str.substr(0,str.find_first_of(' ')))&&str_digt_chk(str.substr(str.find_first_of(' ')+1,str.size())))
+        {
+           m[str.substr(0,str.find_first_of(' '))];
+           str.substr(str.find_first_of(' ')+1,str.size())
+             map.
+        }
+        else std::cout<<"Input error!Please enter a valid word and number.";
+    }
+}
 
 # Executables
 *.exe
